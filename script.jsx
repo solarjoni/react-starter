@@ -4,9 +4,19 @@ const time = "The time is currently: " +  now.toLocaleString()
 
 const getGreeting = () => {
   if (now.getHours() < 12)
-    return <h1>Good morning, { name }! { time }</h1>
+    return (
+      <div>
+        <h1>Good morning, { name }!</h1>
+        <h3>{ time }</h3>
+      </div> 
+    )
   else
-    return <h1>Good afternoon, { name }! { time }</h1>
+    return (
+      <div>
+        <h1>Good morning, { name }!</h1>
+        <h3>{ time }</h3>
+      </div> 
+    )
 }
 
 ReactDOM.render(
